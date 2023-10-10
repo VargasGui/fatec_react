@@ -4,13 +4,18 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import AppViewer from './components/AppViewer'
 
+const mudaNumero = (n) => {
+return (n+1)
+}
+let numero = 15
 function App() {
-  const [count, setCount] = useState(0)
-
+ 
   return (
     <>
     <h1>Santos Futebol Clube</h1>
     <AppViewer />
+    <p>Numero: {numero}</p>
+    <button onClick={numero = mudaNumero(numero)}>Botão</button>
     </>
   )
 }
